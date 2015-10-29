@@ -44,8 +44,16 @@ $string['modulename'] = 'Resouce Upload';
 $string['modulename_help'] = 'Use the conm module for upload file and resources to digital repository and display it on moodle...';
 $string['modulenameplural'] = 'Upload resources';
 
+$string['file_exe'] = 'Extension';
+$string['file_lo'] = 'Learning Object';
+$string['file_book'] = 'Book';
+$string['file_image'] = 'Image';
+$string['file_article'] = 'Article';
+$string['file_animation'] = 'Animation';
+$string['file_book_chapter'] = 'Book Chapter';
+$string['file_other'] = 'Others';
+
 $string['repotype'] = 'Type';
-$string['repotypexe'] = 'Extension';
 $string['reporesume'] = 'Resume';
 $string['repolicense'] = 'Choose License';
 $string['repolanguage'] = 'Language';
@@ -109,3 +117,4 @@ $string['license-cc-nc-sa'] = 'Creative Commons - No Commercial ShareAlike';
 $string['license-cc-sa'] = 'Creative Commons - ShareAlike';
 
 /*$string['upload_error'] = 'Ocorreu um erro inesperado, tente mais tarde.';*/
+$string['filexe'] = 'Extension';
