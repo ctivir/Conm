@@ -81,7 +81,7 @@ class mod_conm_mod_form extends moodleform_mod {
         $mform->addRule('kword', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
        //$mform->addRule('kword', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
         
-        $this->add_intro_editor();
+        $this->standard_intro_elements();
      
         //Add file to upload ------------------------------------------------------------------------------
         $mform->addElement('header', 'contentsection', get_string('contentheader', 'resource'));
@@ -122,14 +122,14 @@ class mod_conm_mod_form extends moodleform_mod {
         
         $mform->addElement('select', 'language', get_string('repolanguage', 'conm'), $printlang);
 
-        $printexe = array( 0 => get_string('repotypexe', 'conm'), 
-                           1 => get_string('repolanguageeng', 'conm'), 
-                           2 => get_string('repolanguagefren', 'conm'),
-                           3 => get_string('repolanguagegerm', 'conm'), 
-                           4 => get_string('repolanguagejapn', 'conm'),
-                           5 => get_string('repolanguagept', 'conm'),
-                           6 => get_string('repolanguagespan', 'conm'),
-                           7 => get_string('repolanguageo', 'conm')); 
+        $printexe = array( 0 => get_string('file_exe', 'conm'), 
+                           1 => get_string('file_animation', 'conm'), 
+                           2 => get_string('file_article', 'conm'),
+                           3 => get_string('file_book', 'conm'), 
+                           4 => get_string('file_book_chapter', 'conm'),
+                           5 => get_string('file_image', 'conm'),
+                           6 => get_string('file_lo', 'conm'),
+                           7 => get_string('file_other', 'conm')); 
         $mform->addElement('select', 'type', get_string('repotype', 'conm'), $printexe);
                 
         //------------------------------------------------------------------------------
