@@ -95,16 +95,13 @@ function conm_get_post_actions() {
  * @param object $mform
  * @return int new Conm instance id
  */
-function conm_add_instance(stdClass $conm, mod_conm_mod_form $mform = null) {
-
-    require_once(dirname(__FILE__) . '/locallib.php');
-
-    $context = context_module::instance($data->coursemodule);
-    $conm    = new conm($context, null, null);
-
-    return $conm->add_instance($data);
-
-    return $conm->id;
+function conm_add_instance ($conm) {
+	 global $DB;
+	 
+	 $conm->timemodified = time();
+	 $conm->timemodified = $conm->timemodified;
+	 
+	 return $DB->insert_record('conm', $conm);
 }
 
 /**
